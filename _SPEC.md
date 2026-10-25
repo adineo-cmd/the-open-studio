@@ -1,8 +1,10 @@
 # The Open Studio — authoring spec (read fully before writing any page)
 
-A free photography & crafts reference library. Pure static HTML, one shared
-stylesheet (`assets/css/site.css`), **no frameworks, no build step, no external
-images, no tracking**. Every page must open correctly from `file://`.
+A free photography reference library, in the spirit of the sibling project
+[The Open Dojo](https://github.com/adineo-cmd/the-open-dojo). The editable
+sources are plain HTML in `src/raw/*.html` (one shared stylesheet at
+`public/assets/css/site.css`), wrapped one-to-one by `src/pages/*.astro` —
+so authoring rules are pure-HTML rules. **No external images, no tracking.**
 
 Tone: warm, precise, plain-spoken reference writing for learners. Original
 prose built on factual knowledge. Use em/en dashes like the rest of the site
@@ -10,9 +12,9 @@ prose built on factual knowledge. Use em/en dashes like the rest of the site
 
 ## Files in this site
 
-| File | Page |
+| File (src/raw/) | Page |
 |---|---|
-| `index.html` | Home (already written — do not touch) |
+| `index.html` | Home — the photography front page (do not touch) |
 | `genres.html` | Photography genres catalog |
 | `profiles.html` | Genre deep-dives |
 | `camera.html` | Camera & exposure |
@@ -26,18 +28,6 @@ prose built on factual knowledge. Use em/en dashes like the rest of the site
 | `masters.html` | Master photographers |
 | `business.html` | Going professional |
 | `learning.html` | Learning paths |
-| `crafts.html` | The Fields hub — links to every field studio |
-| `music.html` | Music field studio |
-| `culinary.html` | Cooking &amp; baking field studio |
-| `writing.html` | Writing field studio |
-| `making.html` | Woodworking &amp; making field studio |
-| `visual-arts.html` | Drawing &amp; painting field studio |
-| `performing.html` | Performing field studio |
-| `digital.html` | Programming &amp; design field studio |
-| `filmmaking.html` | Film &amp; video field studio |
-| `gardening.html` | Gardening &amp; growing field studio |
-| `fitness.html` | Strength &amp; movement field studio |
-| `languages.html` | Languages &amp; translation field studio |
 | `search.html` | Search (loads `assets/js/search-data.js`) |
 
 ## Required page skeleton
@@ -72,7 +62,7 @@ Every subpage uses exactly this skeleton. Copy the header and footer
       <a class="brand" href="index.html">
         <span class="brand-seal" aria-hidden="true">写</span>
         <span class="brand-text">The Open Studio
-          <small>A free photography &amp; crafts library</small>
+          <small>A free photography library</small>
         </span>
       </a>
       <nav class="site-nav" aria-label="Primary">
@@ -103,24 +93,6 @@ Every subpage uses exactly this skeleton. Copy the header and footer
               <li><a href="lighting.html">Light &amp; lighting</a></li>
               <li><a href="editing.html">Editing &amp; workflow</a></li>
               <li><a href="gear.html">Gear &amp; optics</a></li>
-            </ul>
-          </li>
-          <li class="has-sub">
-            <a href="crafts.html">Fields</a>
-            <ul class="submenu">
-              <li><a href="music.html">Music</a></li>
-              <li><a href="culinary.html">Cooking &amp; baking</a></li>
-              <li><a href="writing.html">Writing</a></li>
-              <li><a href="making.html">Woodworking &amp; making</a></li>
-              <li><a href="visual-arts.html">Drawing &amp; painting</a></li>
-              <li><a href="performing.html">Performing</a></li>
-              <li><a href="digital.html">Programming &amp; design</a></li>
-              <li><a href="filmmaking.html">Film &amp; video</a></li>
-              <li><a href="gardening.html">Gardening</a></li>
-              <li><a href="fitness.html">Strength &amp; movement</a></li>
-              <li><a href="languages.html">Languages &amp; translation</a></li>
-              <li class="subhead">All of it</li>
-              <li><a href="crafts.html">Every field, one hub</a></li>
             </ul>
           </li>
           <li><a href="terminology.html">Terminology</a></li>
@@ -158,7 +130,7 @@ Every subpage uses exactly this skeleton. Copy the header and footer
           <span class="brand-seal" aria-hidden="true">写</span>
           <strong>The Open Studio</strong>
         </div>
-        <p>A free, community-minded reference for photographers and makers of every level — genres, craft, light, editing, history, and the business of shooting, written to be read between sessions.</p>
+        <p>A free, community-minded reference for photographers of every level — genres, craft, light, editing, history, and the business of shooting, written to be read between sessions.</p>
       </div>
       <div>
         <h4>Library</h4>
@@ -176,26 +148,12 @@ Every subpage uses exactly this skeleton. Copy the header and footer
           <li><a href="history.html">History</a></li>
           <li><a href="business.html">Going pro</a></li>
           <li><a href="learning.html">Learning paths</a></li>
-          <li><a href="crafts.html">Every field</a></li>
-          <li><a href="music.html">Music</a></li>
-          <li><a href="culinary.html">Cooking &amp; baking</a></li>
-          <li><a href="writing.html">Writing</a></li>
-          <li><a href="making.html">Making</a></li>
-          <li><a href="visual-arts.html">Visual arts</a></li>
-          <li><a href="performing.html">Performing</a></li>
-          <li><a href="digital.html">Digital crafts</a></li>
-          <li><a href="filmmaking.html">Film &amp; video</a></li>
-          <li><a href="gardening.html">Gardening</a></li>
-          <li><a href="fitness.html">Strength &amp; movement</a></li>
-          <li><a href="languages.html">Languages</a></li>
           <li><a href="search.html">Search</a></li>
         </ul>
-      </div>
-      <div>
         <h4>Contributing</h4>
         <ul>
           <li><a href="mailto:editors@openstudio.example">Send a correction</a></li>
-          <li><a href="mailto:editors@openstudio.example">Suggest a genre or craft</a></li>
+          <li><a href="mailto:editors@openstudio.example">Suggest a genre</a></li>
         </ul>
         <p class="small">Found a mistake? These pages improve the way negatives do — repetition with attention.</p>
       </div>
@@ -247,7 +205,7 @@ Every subpage uses exactly this skeleton. Copy the header and footer
   `chip-subject` (people/subjects), `chip-approach` (method/approach),
   `chip-place` (location-based), `chip-pro` (commercial/professional),
   plain `chip` for neutral tags.
-- Cards for genres/crafts/people: `<div class="style-grid">` of
+- Cards for genres/people: `<div class="style-grid">` of
   `<article class="style-card">` with `<div class="script">` (a short kanji
   or the name itself), `<div class="origin">`, `<h3>`, `<p>`, `.chips`,
   optional `<a class="more">`.
@@ -256,8 +214,9 @@ Every subpage uses exactly this skeleton. Copy the header and footer
 - Side-by-side prose: `<div class="split">` or `split--3` of `<div class="panel">`.
 - End long pages with `<p class="anchor-note"><a class="back-top" href="#main">Back to top</a></p>`.
 - Cross-link generously to sibling pages (`genres.html#people`,
-  `camera.html#aperture`, …) — but ONLY to anchors that exist on those pages
-  per the briefs below.
+  `camera.html#aperture`, …) — but ONLY to anchors listed below.
+- After editing any page, regenerate the search index:
+  `python3 tools/build_search_index.py`.
 
 ## Canonical anchors (so cross-links never break)
 
@@ -274,9 +233,6 @@ Every subpage uses exactly this skeleton. Copy the header and footer
 - `masters.html`: one anchor per photographer id, e.g. `#ansel-adams`
 - `business.html`: `#paths` `#portfolio` `#clients` `#pricing` `#contracts` `#rights` `#stock` `#prints` `#marketing` `#mistakes`
 - `learning.html`: `#first-year` `#projects` `#drills` `#critique` `#milestones`
-- `crafts.html`: `#why` `#fields` `#build`
-- Field pages (`music.html`, `culinary.html`, `writing.html`, `making.html`, `visual-arts.html`, `performing.html`, `digital.html`) share: `#overview` `#crafts` `#technique` `#vocabulary` `#masters` `#history` `#first-year` `#kit`
-- Newer field pages (`filmmaking.html`, `gardening.html`, `fitness.html`, `languages.html`) add a ninth section: `#overview` `#crafts` `#technique` `#vocabulary` `#masters` `#history` `#first-year` `#pro` `#kit` 
 - Search: `search.html?q=aperture` must work.
 
 ## Accessibility rules
@@ -288,12 +244,10 @@ Every subpage uses exactly this skeleton. Copy the header and footer
 
 ## Footer nav “current” marking
 
+- index.html → mark **Home** current
 - genres.html → mark **Genres** current
 - camera.html, composition.html, lighting.html, editing.html, gear.html →
   mark **Craft** current
 - terminology.html → mark **Terminology** current
-- crafts.html, music.html, culinary.html, writing.html, making.html,
-  visual-arts.html, performing.html, digital.html, filmmaking.html,
-  gardening.html, fitness.html, languages.html → mark **Fields** current
-- every other page (profiles, glossary, masters, history, business,
-  learning, search) → mark **More** current
+- every other page (profiles, glossary, masters, history, business, learning,
+  search) → mark **More** current

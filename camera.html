@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camera &amp; Exposure — The Open Studio</title>
+  <meta name="description" content="The exposure triangle, f-numbers, shutter speeds, ISO, stops, metering, modes, autofocus, white balance, histograms, RAW versus JPEG, holding the camera steady, and drills that make it all automatic.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23B26E1E'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='white' font-family='serif'%3E%E5%86%99%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-seal" aria-hidden="true">写</span>
+        <span class="brand-text">The Open Studio
+          <small>A free photography &amp; crafts library</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="has-sub">
+            <a href="genres.html">Genres</a>
+            <ul class="submenu">
+              <li class="subhead">By subject</li>
+              <li><a href="genres.html#people">People &amp; portraits</a></li>
+              <li><a href="genres.html#places">Places &amp; structures</a></li>
+              <li><a href="genres.html#nature">Nature &amp; wildlife</a></li>
+              <li><a href="genres.html#commercial">Studio &amp; commercial</a></li>
+              <li class="subhead">By approach</li>
+              <li><a href="genres.html#documentary">Documentary &amp; street</a></li>
+              <li><a href="genres.html#artistic">Artistic</a></li>
+              <li><a href="genres.html#technical">Technical &amp; scientific</a></li>
+              <li class="subhead">Start here</li>
+              <li><a href="genres.html#featured">Featured genres</a></li>
+              <li><a href="genres.html#choosing">Choosing your genre</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="camera.html" class="current" aria-current="page">Craft</a>
+            <ul class="submenu">
+              <li><a href="camera.html">Camera &amp; exposure</a></li>
+              <li><a href="composition.html">Composition</a></li>
+              <li><a href="lighting.html">Light &amp; lighting</a></li>
+              <li><a href="editing.html">Editing &amp; workflow</a></li>
+              <li><a href="gear.html">Gear &amp; optics</a></li>
+            </ul>
+          </li>
+          <li><a href="terminology.html">Terminology</a></li>
+          <li class="has-sub">
+            <a href="crafts.html">Fields</a>
+            <ul class="submenu">
+              <li><a href="music.html">Music</a></li>
+              <li><a href="culinary.html">Cooking &amp; baking</a></li>
+              <li><a href="writing.html">Writing</a></li>
+              <li><a href="making.html">Woodworking &amp; making</a></li>
+              <li><a href="visual-arts.html">Drawing &amp; painting</a></li>
+              <li><a href="performing.html">Performing</a></li>
+              <li><a href="digital.html">Programming &amp; design</a></li>
+              <li><a href="filmmaking.html">Film &amp; video</a></li>
+              <li><a href="gardening.html">Gardening</a></li>
+              <li><a href="fitness.html">Strength &amp; movement</a></li>
+              <li><a href="languages.html">Languages &amp; translation</a></li>
+              <li class="subhead">All of it</li>
+              <li><a href="crafts.html">Every field, one hub</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="masters.html">More</a>
+            <ul class="submenu">
+              <li class="subhead">Study</li>
+              <li><a href="profiles.html">Genre profiles</a></li>
+              <li><a href="masters.html">Masters</a></li>
+              <li><a href="history.html">History</a></li>
+              <li><a href="glossary.html">Glossary</a></li>
+              <li class="subhead">Practice</li>
+              <li><a href="business.html">Going pro</a></li>
+              <li><a href="learning.html">Learning paths</a></li>
+              <li class="subhead">Reference</li>
+              <li><a href="search.html">Search</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="searchbox" action="search.html" role="search">
+          <input type="search" name="q" placeholder="Search the library…" aria-label="Search the library">
+        </form>
+      </nav>
+    </div>
+  </header>
+
+            <main id="main">
+    <div class="page-hero">
+      <div class="container">
+        <p class="crumbs"><a href="index.html">Library</a> → Camera &amp; Exposure</p>
+        <h1>Camera &amp; Exposure — the controls behind every picture</h1>
+        <p class="lede">Every camera does the same three things: it lets light in through a hole, for a length of time, and records how much arrived. This page covers those controls — what each does, what it costs, and how to choose it on purpose. For subjects, see <a href="composition.html#thirds">composition</a>; for the light itself, <a href="lighting.html#qualities">light &amp; lighting</a>.</p>
+        <nav aria-label="Jump to">
+          <ul class="jump-list">
+            <li><a href="#triangle">Triangle</a></li>
+            <li><a href="#aperture">Aperture</a></li>
+            <li><a href="#shutter">Shutter</a></li>
+            <li><a href="#iso">ISO</a></li>
+            <li><a href="#stops">Stops</a></li>
+            <li><a href="#metering">Metering</a></li>
+            <li><a href="#modes">Modes</a></li>
+            <li><a href="#focus">Focus</a></li>
+            <li><a href="#white-balance">White balance</a></li>
+            <li><a href="#histogram">Histogram</a></li>
+            <li><a href="#raw">RAW vs JPEG</a></li>
+            <li><a href="#holding">Holding</a></li>
+            <li><a href="#exercises">Drills</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="section-tight" id="triangle">
+      <div class="container">
+        <h2>The exposure triangle</h2>
+        <p class="section-intro">Three controls set how much light a photograph receives — the aperture's size, the shutter's duration, the ISO's amplification — and each drags a side effect: the side effects are where photographs get their look.</p>
+        <p>A stop in one control cancels a stop in another: f/2.8 at 1/1000 s and ISO 100 lets in exactly the light of f/8 at 1/125 s — an <em>equivalent exposure</em>. Brightness stays put; depth of field, motion rendering, and noise change. One-line definitions live in the <a href="terminology.html#exposure-terms">exposure glossary</a>.</p>
+        <div class="table-wrap">
+          <table class="wiki">
+            <thead>
+              <tr><th scope="col">Control</th><th scope="col">Each stop doubles/halves</th><th scope="col">Side effect you're really choosing</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Aperture (f-number)</td><td class="num">Halving the f-number (f/4 → f/2.8) doubles the light</td><td>Depth of field — how much is acceptably sharp</td></tr>
+              <tr><td>Shutter speed</td><td class="num">Doubling the time (1/250 → 1/125 s) doubles the light</td><td>Motion rendering — frozen or blurred on purpose</td></tr>
+              <tr><td>ISO</td><td class="num">Doubling it (400 → 800) brightens one stop</td><td>Noise and latitude — cleanliness and forgiveness</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight" id="aperture">
+      <div class="container">
+        <h2>Aperture — the hole and its f-numbers</h2>
+        <p class="section-intro">The aperture is an adjustable iris in the lens, sized as an f-number: focal length divided by the opening's diameter — hence the backwards scale, f/2 a bigger hole than f/16. Full stops run f/1, 1.4, 2, 2.8, 4, 5.6, 8, 11, 16, 22; each step multiplies the f-number by about 1.4 and halves the light.</p>
+        <div class="table-wrap">
+          <table class="wiki">
+            <thead>
+              <tr><th scope="col">f-number, and its light vs f/1.4</th><th scope="col">Depth of field, and what it's for</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="num">f/1.4 — 1×</td><td>Razor-thin: night, one eye sharp</td></tr>
+              <tr><td class="num">f/2 — 1/2</td><td>Very shallow: dim portraits</td></tr>
+              <tr><td class="num">f/2.8 — 1/4</td><td>Shallow: fast zooms, events</td></tr>
+              <tr><td class="num">f/4 — 1/8</td><td>Moderate: groups, walkarounds</td></tr>
+              <tr><td class="num">f/5.6 — 1/16</td><td>Moderate-deep: many lenses' sharpest</td></tr>
+              <tr><td class="num">f/8 — 1/32</td><td>Deep: landscapes, daylight street</td></tr>
+              <tr><td class="num">f/11 — 1/64</td><td>Deeper: near-to-far; sunstars begin</td></tr>
+              <tr><td class="num">f/16–22 — 1/128–1/256</td><td>Extreme: maximum depth; diffraction softens</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>Depth of field</strong> — the zone that looks acceptably sharp around the focus point — is set by aperture, but also by distance and framing: step closer and it shrinks; frame the same subject with a longer lens from further back and it shrinks again. A third of the zone sits in front of the focus point, two thirds behind. Depth as a <a href="composition.html#depth">compositional device</a> has its own page; the glass, its <a href="gear.html#lenses">anatomy</a>.</p>
+        <p><strong>Diffraction, the tax on small holes.</strong> From roughly f/11 on full frame (earlier on small sensors, later on medium format), light squeezed through a small opening spreads and softens the whole image, however good the lens. Past the point where depth is enough, stopping down buys blur, not sharpness.</p>
+        <p><strong>Bokeh</strong> — Japanese <em>boke</em>, blur — is how out-of-focus areas look, not how much of them there is: f/1.8 gives more blur, bokeh says whether it is smooth or busy. Rounded blades render round highlights; straight-edged ones turn lights into polygons — one reason the <a href="gear.html#primes">classic primes</a> are chased.</p>
+      </div>
+    </section>
+
+    <section class="section-tight" id="shutter">
+      <div class="container">
+        <h2>Shutter speed — time as a material</h2>
+        <p class="section-intro">The shutter decides how long the sensor sees the scene. Fast speeds freeze; slow speeds let moving things smear — and the smear is a tool, not a defect. Fractions mean fractions: 1/125 is one hundred twenty-fifth of a second.</p>
+        <div class="table-wrap">
+          <table class="wiki">
+            <thead>
+              <tr><th scope="col">Shutter</th><th scope="col">What it does to a scene</th><th scope="col">Typical use</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="num">30 s</td><td>Water to mist, crowds to ghosts</td><td>Night, star trails — tripod mandatory</td></tr>
+              <tr><td class="num">15–8 s</td><td>Water and clouds smooth out</td><td>Waterfalls, seascapes, light painting</td></tr>
+              <tr><td class="num">4 s–1/2</td><td>Traffic into rivers of light</td><td>City nights, braced streets</td></tr>
+              <tr><td class="num">1/30–1/8</td><td>Deliberate blur; streaked backgrounds</td><td>Panning runners and cars</td></tr>
+              <tr><td class="num">1/60–1/125</td><td>Walking people sharp; handhold floor</td><td>Candids, street, reportage</td></tr>
+              <tr><td class="num">1/250–1/1000</td><td>Runners, cyclists, birds freeze</td><td>Daylight sports; 1/250 = flash-sync limit on many bodies</td></tr>
+              <tr><td class="num">1/2000–1/8000</td><td>Droplets hang mid-air</td><td>Splashes; wide open in bright sun</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>The handhold rule.</strong> Hold no slower than one over the focal length: a 50mm wants 1/60 s, and a 100mm on APS-C — framing like 150mm — wants 1/200 s. Stabilization buys three to five stops against camera shake but never subject motion; a walking person needs about 1/125 s regardless. Slower work needs <a href="gear.html#support">support gear</a>.</p>
+        <p><strong>Motion blur and panning.</strong> A freeze says <em>this happened</em>; a smear says <em>this was moving</em> — you choose the story. Panning is the middle path: 1/15 to 1/60 s, tracking from the hips, press and keep swinging; the subject stays sharp while the world streaks. Daylight long exposures need <a href="gear.html#filters">ND filters</a>.</p>
+      </div>
+    </section>
+
+    <section class="section-tight" id="iso">
+      <div class="container">
+        <h2>ISO — amplification and its grain</h2>
+        <p class="section-intro">ISO sets how hard the camera amplifies the light it gathered. Base ISO — usually 100, sometimes 64 or 200 — is the sensor's cleanest setting; every doubling buys one stop of brightness at the price of noise.</p>
+        <p>Most bodies shoot usable files at ISO 1600 and respectable ones at 3200–6400; noise arrives in the shadows first as fine colored speckle, and software removes more every year (<a href="editing.html#detail">noise reduction</a>). Raise ISO without apology whenever shutter and aperture are already right — a noisy sharp photograph beats a clean blurred one every time it is looked at. Complaints about high ISO usually trace to underexposure: expose fully, per <a href="#histogram">the histogram</a>, and ISO 6400 develops clean.</p>
+        <p><strong>Auto ISO</strong> needs guardrails: a maximum ISO and a minimum shutter speed. In aperture priority it is the closest thing to a default mode — you choose depth of field, the camera keeps the shutter safe. Limits: its minimum shutter runs too cautious for static scenes and too optimistic for fast ones; set it to track focal length if the body allows. In manual with auto ISO, exposure compensation moves the ISO.</p>
+      </div>
+    </section>
+
+    <section class="section-tight" id="stops">
+      <div class="container">
+        <h2>Stops — the grammar of exposure</h2>
+        <p class="section-intro">A stop is a doubling or halving of light — the exchange rate between the three controls, and what lets you trade between them without arithmetic in awkward fractions.</p>
+        <div class="table-wrap">
+          <table class="wiki">
+            <thead>
+              <tr><th scope="col">Change</th><th scope="col">Aperture</th><th scope="col">Shutter</th><th scope="col">ISO</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>+3 stops</td><td class="num">f/1.4</td><td class="num">1/15 s</td><td class="num">800</td></tr>
+              <tr><td>+2 stops</td><td class="num">f/2</td><td class="num">1/30 s</td><td class="num">400</td></tr>
+              <tr><td>+1 stop</td><td class="num">f/2.8</td><td class="num">1/60 s</td><td class="num">200</td></tr>
+              <tr><td>Start</td><td class="num">f/4</td><td class="num">1/125 s</td><td class="num">100</td></tr>
+              <tr><td>−1 stop</td><td class="num">f/5.6</td><td class="num">1/250 s</td><td class="num">50</td></tr>
+              <tr><td>−2 stops</td><td class="num">f/8</td><td class="num">1/500 s</td><td class="num">25</td></tr>
+              <tr><td>−3 stops</td><td class="num">f/11</td><td class="num">1/1000 s</td><td class="num">12*</td></tr>
+              <tr><td>−4 stops</td><td class="num">f/16</td><td class="num">1/2000 s</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="anchor-note">Every row across is the same brightness: f/2 at 1/500 s at ISO 100 lets in exactly what the start row does. Most sensors bottom out near ISO 50–100; between full stops the camera counts thirds, but think in whole stops first.</p>
+        <p><strong>Exposure compensation.</strong> The ± button is the most-used control in P, A, and S: +0.7 renders brighter than the camera's guess, −1 darker. In aperture priority it moves the shutter; in shutter priority the aperture; in manual with auto ISO it moves the ISO; in fully manual it does nothing — the needle moves, the file doesn't.</p>
+      </div>
+    </section>
+
+    <section class="section-tight" id="metering">
+      <div class="container">
+        <h2>Metering — how the camera guesses</h2>
+        <p class="section-intro">The in-camera meter measures light reflected off the scene and has one answer for everything: make the average middle gray. <strong>Reflected metering</strong> inherits every tone the subject wears — it cannot tell a white wall in dim light from a dark wall in bright sun. <strong>Incident metering</strong> reads the light falling on the subject, blind to wardrobe; aim a handheld meter at the camera from where the subject stands. The modern answer: the reflected meter plus your judgment of whether the subject is brighter or darker than gray.</p>
+        <div class="table-wrap">
+          <table class="wiki">
+            <thead>
+              <tr><th scope="col">Metering mode</th><th scope="col">What it reads</th><th scope="col">When it's the right guess</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Matrix / evaluative</td><td>The whole frame in zones, matched against a library of scenes</td><td>The default, and a good one; fooled by backlight</td></tr>
+              <tr><td>Center-weighted</td><td>Mostly the frame's middle; predictable</td><td>When you want boring reliability</td></tr>
+              <tr><td>Spot</td><td>One to five percent of the frame, often under the focus point</td><td>Backlit faces, snow, theater, the moon</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>Metering to the right.</strong> Sensors record their cleanest signal near the top of their range: expose as bright as possible without clipping, then pull the file down in the converter — in practice, add positive compensation until the histogram or blinkies warn, then back off a third. The full debate is under <a href="#histogram">the histogram</a>.</p>
+        <p><strong>Snow, sand, and other liars.</strong> Snow and sand read two stops bright, so the meter returns gray slush: add +1 to +2 stops. Black dogs and dark coats read two stops dark, so the meter washes them out: subtract one to one and two thirds. General rule: decide whether the subject is lighter or darker than middle gray, then push compensation that way — the <a href="#stops">stop table</a> does the arithmetic.</p>
+      </div>
+    </section>
+
+    <section class="section-tight" id="modes">
+      <div class="container">
+        <h2>Modes — who decides what</h2>
+        <p class="section-intro">The mode dial doesn't change what the camera can do; it changes which decisions are yours. P, A, S, and M produce identical files given identical settings — the dial just moves the negotiation.</p>
+        <div class="table-wrap">
+          <table class="wiki">
+            <thead>
+              <tr><th scope="col">Mode</th><th scope="col">You set</th><th scope="col">The camera sets</th><th scope="col">When it shines</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>P (Program)</td><td>ISO, compensation, white balance</td><td>Aperture + shutter</td><td>Quick, candid, borrowed moments</td></tr>
+              <tr><td>A / Av (Aperture priority)</td><td>Aperture, ISO, compensation</td><td>Shutter speed</td><td>The working default; depth of field is the usual creative call</td></tr>
+              <tr><td>S / Tv (Shutter priority)</td><td>Shutter, ISO, compensation</td><td>Aperture</td><td>Motion first: sports, birds, water</td></tr>
+              <tr><td>M (Manual)</td><td>Aperture and shutter</td><td>Only meter advice</td><td>Studio flash, night, static light</td></tr>
+              <tr><td>Bulb</td><td>Shutter open while held</td><td>Nothing</td><td>Star trails, lightning, past 30 s</td></tr>
+              <tr><td>Auto and scene modes</td><td>Nothing</td><td>Everything</td><td>Other hands, emergencies</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Two honest recommendations: aperture priority with auto ISO for moving through the world; manual for when light is constant but frames change. For the sync limit in flash work, see <a href="lighting.html#flash">flash lighting</a>.</p>
+      </div>
+    </section>
+
+    <section class="section-tight" id="focus">
+      <div class="container">
+        <h2>Focus — where the sharpness falls</h2>
+        <p class="section-intro">Exposure decides how bright the picture is; focus decides what it is about. Modern autofocus is startlingly good — and still fails in characteristic ways.</p>
+        <p><strong>AF-S and AF-C.</strong> AF-S (single servo) focuses once and locks — for anything still. AF-C (continuous) re-focuses until the shutter fires — for anything moving; pair it with a wide area or tracking and let the camera hold the runner while you hold the frame. AF-A switches by itself, fine until it guesses wrong.</p>
+        <p><strong>Points and zones.</strong> Focus areas run from one precise square to broad zones to the whole frame; the trade is precision against forgiveness. A small point puts focus exactly where you say; a wide zone forgives aim and sometimes parks focus where you didn't mean. Eyes deserve the smallest point you can hold steady; the motors doing the moving are part of <a href="gear.html#lenses">lens anatomy</a>.</p>
+        <p><strong>Back-button focus.</strong> Remap autofocus to a rear AF-ON button and half-pressing stops re-focusing every frame; AF-S and AF-C become one button — tap to lock, hold to track. Cost: a week of retraining.</p>
+        <p><strong>Focus and recompose — the wide-aperture trap.</strong> Locking on the center point and swinging to frame fails wide open: the swing rotates the plane of focus away from the subject, and at f/1.4 the error lands on the eyes. Move the point instead; if you must recompose, use the near eye and a small swing.</p>
+        <p><strong>Zone focus and hyperfocal distance.</strong> Street photographers pre-focus — two or three meters set manually at f/8 — and nothing ever hunts: everything from about half that distance out is sharp enough. The formal version, the hyperfocal distance, keeps everything from half that distance to infinity acceptably sharp; 28mm at f/8 on full frame lands near four meters, and landscape shooters focus near it or a third of the way in. Tolerances vary; "sharp enough" is a decision. More in the <a href="profiles.html#street">street profile</a>.</p>
+      </div>
+    </section>
+
+    <section class="section-tight" id="white-balance">
+      <div class="container">
+        <h2>White balance — the color of the light</h2>
+        <p class="section-intro">Every light source has a color — candlelight orange, shade blue, fluorescent faintly green. White balance tells the camera what "neutral" means now, measured in kelvin, which runs backwards from intuition: warm candlelight is a low number, blue shade a high one.</p>
+        <div class="table-wrap">
+          <table class="wiki">
+            <thead>
+              <tr><th scope="col">Light source</th><th scope="col">Approximate temperature, and the cast it makes</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Candle flame</td><td class="num">1,800–2,000 K — deep amber</td></tr>
+              <tr><td>Tungsten household bulb</td><td class="num">2,700–3,000 K — warm orange</td></tr>
+              <tr><td>Sunrise and sunset</td><td class="num">3,000–3,500 K — golden</td></tr>
+              <tr><td>Fluorescent tubes</td><td class="num">4,000–4,500 K — flat, often greenish</td></tr>
+              <tr><td>Midday sun and electronic flash</td><td class="num">5,000–5,600 K — neutral daylight</td></tr>
+              <tr><td>Bright overcast</td><td class="num">6,000–7,000 K — cool, soft</td></tr>
+              <tr><td>Open shade</td><td class="num">7,500–9,000 K — noticeably blue</td></tr>
+              <tr><td>Blue twilight sky</td><td class="num">10,000 K and up — deep blue</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The setting works in reverse: dialing 3,200 K under blue shade warms the picture to compensate. Presets are labeled kelvin values plus corrections; a custom reading off a gray card beats them, and mixed light cannot be fixed with one number — <a href="lighting.html#mixing">mixing light sources</a> is a lighting problem first.</p>
+        <p><strong>The RAW consolation.</strong> On a RAW file, white balance is a label, not an ingredient — changed later, losslessly, as often as you like. Set it sensibly anyway: the JPEG preview and your memory of the scene benefit. Developing lives in <a href="editing.html#raw">editing and workflow</a>.</p>
+      </div>
+    </section>
+
+    <section class="section-tight" id="histogram">
+      <div class="container">
+        <h2>The histogram — the only honest review screen</h2>
+        <p class="section-intro">The histogram is a bar chart of the image's tones — black at the left edge, white at the right, pixel counts as height. It is the one playback tool that doesn't lie: the LCD shifts with viewing angle, brightness, and ambient light; the histogram is the data.</p>
+        <p><strong>Reading it.</strong> There is no ideal shape — a snow scene should pile right, a night street left. The edges matter: data against the left wall is shadow crushed to black, unrecoverable; against the right, highlights blown, likewise. A scene with true black and true white should touch both; the skill is knowing which pixels you can afford.</p>
+        <p><strong>Blinkies.</strong> Turn on the overexposure warning and clipped zones flash on playback. They come from the JPEG rendering, err slightly conservative, and in warm light red usually clips first — check the RGB histograms.</p>
+        <p><strong>The expose-to-the-right debate.</strong> Whether to chase the right edge on purpose is one of the few real arguments in digital exposure. Both sides, fairly:</p>
+        <div class="split">
+          <div class="panel">
+            <h3>The case for</h3>
+            <p>Sensors count linearly: each stop brighter is recorded with twice as many steps, so the brightest stop carries the most data and the cleanest signal. Exposing as far right as possible without clipping, then pulling the file down in the converter, buys measurably less shadow noise — about a stop's worth, free, in even light on a tripod.</p>
+          </div>
+          <div class="panel">
+            <h3>The case against</h3>
+            <p>Highlights clip hard and unevenly — red first, then green, then blue — and one clipped sky is unrecoverable no matter what the average says. Warnings are calibrated to the JPEG, not the RAW, so "safe" is looser than it looks; fragile highlights — a bride's dress, snow, a sky worth keeping — punish overconfidence exactly when it feels justified.</p>
+          </div>
+        </div>
+        <p><strong>A fair summary:</strong> meter to the right when light is even, the subject still, and highlights have room; keep a margin when a highlight matters more than the noise floor. Finish in the converter — see <a href="editing.html#tone">tone in the editor</a>.</p>
+      </div>
+    </section>
+
+    <section class="section-tight" id="raw">
+      <div class="container">
+        <h2>RAW versus JPEG — where the decisions get made</h2>
+        <p class="section-intro">A RAW file is the sensor's reading with as little processing as the maker allows — CR3, NEF, ARW, RAF, or the neutral DNG. A JPEG is that reading after the camera develops it — white balance, tone curve, color, sharpening, noise reduction — and squeezes it down. Neither is more truthful; they differ in who makes the decisions.</p>
+        <div class="table-wrap">
+          <table class="wiki">
+            <thead>
+              <tr><th scope="col">Aspect</th><th scope="col">RAW</th><th scope="col">JPEG</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Data depth</td><td>12–14 bits — thousands of tones per channel</td><td>8 bits — 256 tones per channel</td></tr>
+              <tr><td>Highlight recovery</td><td>Often a stop or more</td><td>Almost none; once blown, gone</td></tr>
+              <tr><td>White balance</td><td>Decided later, losslessly</td><td>Baked in at the shutter</td></tr>
+              <tr><td>File size and burst</td><td>Two to six times larger; shorter bursts</td><td>Small; longer bursts</td></tr>
+              <tr><td>Workflow</td><td>Every frame needs developing</td><td>Ready when it lands, shares everywhere</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The honest rule: RAW when you intend to edit and the light is interesting; RAW plus JPEG for instant shares; JPEG alone for snapshots and long days where developing every frame would mean the pictures never get seen. RAW spends card space and evening hours — both real constraints. Developing is in <a href="editing.html#raw">Editing &amp; workflow</a>; cards and drives in <a href="gear.html#storage">storage</a>.</p>
+      </div>
+    </section>
+
+    <section class="section-tight" id="holding">
+      <div class="container">
+        <h2>Holding the camera — the cheapest sharpness there is</h2>
+        <p class="section-intro">Half the soft pictures at 1/30 s were lost to the photographer's pulse, not the lens. A stable stance buys two stops before any dial is touched.</p>
+        <dl class="term-grid">
+          <dt>Stance</dt>
+          <dd>Feet shoulder-width, elbows in against the ribs, camera pressed to the brow. Left hand under the lens, palm bearing the weight; right hand on the grip, finger resting rather than stabbing.</dd>
+          <dt>Breathing</dt>
+          <dd>Exhale slowly and press on the empty part of the breath; for slow shutters, press between heartbeats.</dd>
+          <dt>Braces</dt>
+          <dd>Walls, doorframes, fences, your knee kneeling — press, don't rest, and put a timer between you and the shutter.</dd>
+          <dt>The strap trick</dt>
+          <dd>Push the camera outward against a taut neck strap; the tension steadies it. Off the tripod in wind — it is a sail.</dd>
+          <dt>Long lenses</dt>
+          <dd>Support the lens, not the body, and use the tripod collar. At 400mm the lens is the camera anyway.</dd>
+        </dl>
+        <p>When hands aren't enough: legs, heads, and clamps in <a href="gear.html#support">support gear</a>.</p>
+      </div>
+    </section>
+
+    <section class="section-tight" id="exercises">
+      <div class="container">
+        <h2>Six drills that teach the dials</h2>
+        <p class="section-intro">Reading about exposure works about as well as reading about bicycles. Each drill costs an afternoon and makes one control automatic; more live at <a href="learning.html#drills">learning paths — drills</a>. When the dials turn themselves, spend the attention on <a href="composition.html#frames">the frame</a> and <a href="lighting.html#setups">the light</a>.</p>
+        <div class="split--3">
+          <div class="panel">
+            <h3>One afternoon, one aperture</h3>
+            <p>Aperture priority, f/8, one lens, one afternoon — the depth decision is retired. You'll notice what actually changes a picture: distance, light, timing.</p>
+          </div>
+          <div class="panel">
+            <h3>The shutter-speed ladder</h3>
+            <p>Shoot the same composition from 1/1000 s down to 1/8 s, one stop per frame, at a fountain or crosswalk. Find where motion stops being frozen.</p>
+          </div>
+          <div class="panel">
+            <h3>Stop arithmetic from memory</h3>
+            <p>Meter any scene, then predict three equivalent exposures — one trading aperture, one shutter, one ISO — before touching a dial. Two weeks and the stop table is reflex.</p>
+          </div>
+          <div class="panel">
+            <h3>Snow, sand, and a black bag</h3>
+            <p>Fill the frame with something white in daylight: the camera returns gray. Add +1, +1.5, +2 and watch white return; repeat with black and subtract.</p>
+          </div>
+          <div class="panel">
+            <h3>The wide-open focus test</h3>
+            <p>On a tripod, a meter away, wide open at f/1.8: focus on the near eye, recompose, shoot — then move the focus point and shoot again. Compare at 100 percent.</p>
+          </div>
+          <div class="panel">
+            <h3>One scene into the dark</h3>
+            <p>Shoot a static dusk scene in manual every ten minutes for an hour, re-metering each time. You'll learn what "the light changed" means, minute by minute.</p>
+          </div>
+        </div>
+        <p class="anchor-note"><a class="back-top" href="#main">Back to top</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-seal" aria-hidden="true">写</span>
+          <strong>The Open Studio</strong>
+        </div>
+        <p>A free, community-minded reference for photographers and makers of every level — genres, craft, light, editing, history, and the business of shooting, written to be read between sessions.</p>
+      </div>
+      <div>
+        <h4>Library</h4>
+        <ul>
+          <li><a href="genres.html">Genres</a></li>
+          <li><a href="profiles.html">Genre profiles</a></li>
+          <li><a href="camera.html">Camera &amp; exposure</a></li>
+          <li><a href="composition.html">Composition</a></li>
+          <li><a href="lighting.html">Light &amp; lighting</a></li>
+          <li><a href="editing.html">Editing &amp; workflow</a></li>
+          <li><a href="gear.html">Gear &amp; optics</a></li>
+          <li><a href="terminology.html">Terminology</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+          <li><a href="masters.html">Masters</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="business.html">Going pro</a></li>
+          <li><a href="learning.html">Learning paths</a></li>
+          <li><a href="crafts.html">Every field</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="culinary.html">Cooking &amp; baking</a></li>
+          <li><a href="writing.html">Writing</a></li>
+          <li><a href="making.html">Making</a></li>
+          <li><a href="visual-arts.html">Visual arts</a></li>
+          <li><a href="performing.html">Performing</a></li>
+          <li><a href="digital.html">Digital crafts</a></li>
+          <li><a href="filmmaking.html">Film &amp; video</a></li>
+          <li><a href="gardening.html">Gardening</a></li>
+          <li><a href="fitness.html">Strength &amp; movement</a></li>
+          <li><a href="languages.html">Languages</a></li>
+          <li><a href="search.html">Search</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contributing</h4>
+        <ul>
+          <li><a href="mailto:editors@openstudio.example">Send a correction</a></li>
+          <li><a href="mailto:editors@openstudio.example">Suggest a genre or craft</a></li>
+        </ul>
+        <p class="small">Found a mistake? These pages improve the way negatives do — repetition with attention.</p>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <div class="container">
+        <span>© 2026 The Open Studio. Original reference content, written for people who make things.</span>
+        <span>Informational only — respect privacy, permits, and wildlife when you shoot.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

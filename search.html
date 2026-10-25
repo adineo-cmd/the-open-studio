@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search — The Open Studio</title>
+  <meta name="description" content="Client-side search across every page of The Open Studio — genres, craft, light, history, and the business of photography. Nothing leaves your browser.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23B26E1E'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='white' font-family='serif'%3E%E5%86%99%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-seal" aria-hidden="true">写</span>
+        <span class="brand-text">The Open Studio
+          <small>A free photography &amp; crafts library</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="has-sub">
+            <a href="genres.html">Genres</a>
+            <ul class="submenu">
+              <li class="subhead">By subject</li>
+              <li><a href="genres.html#people">People &amp; portraits</a></li>
+              <li><a href="genres.html#places">Places &amp; structures</a></li>
+              <li><a href="genres.html#nature">Nature &amp; wildlife</a></li>
+              <li><a href="genres.html#commercial">Studio &amp; commercial</a></li>
+              <li class="subhead">By approach</li>
+              <li><a href="genres.html#documentary">Documentary &amp; street</a></li>
+              <li><a href="genres.html#artistic">Artistic</a></li>
+              <li><a href="genres.html#technical">Technical &amp; scientific</a></li>
+              <li class="subhead">Start here</li>
+              <li><a href="genres.html#featured">Featured genres</a></li>
+              <li><a href="genres.html#choosing">Choosing your genre</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="camera.html">Craft</a>
+            <ul class="submenu">
+              <li><a href="camera.html">Camera &amp; exposure</a></li>
+              <li><a href="composition.html">Composition</a></li>
+              <li><a href="lighting.html">Light &amp; lighting</a></li>
+              <li><a href="editing.html">Editing &amp; workflow</a></li>
+              <li><a href="gear.html">Gear &amp; optics</a></li>
+            </ul>
+          </li>
+          <li><a href="terminology.html">Terminology</a></li>
+          <li class="has-sub">
+            <a href="crafts.html">Fields</a>
+            <ul class="submenu">
+              <li><a href="music.html">Music</a></li>
+              <li><a href="culinary.html">Cooking &amp; baking</a></li>
+              <li><a href="writing.html">Writing</a></li>
+              <li><a href="making.html">Woodworking &amp; making</a></li>
+              <li><a href="visual-arts.html">Drawing &amp; painting</a></li>
+              <li><a href="performing.html">Performing</a></li>
+              <li><a href="digital.html">Programming &amp; design</a></li>
+              <li><a href="filmmaking.html">Film &amp; video</a></li>
+              <li><a href="gardening.html">Gardening</a></li>
+              <li><a href="fitness.html">Strength &amp; movement</a></li>
+              <li><a href="languages.html">Languages &amp; translation</a></li>
+              <li class="subhead">All of it</li>
+              <li><a href="crafts.html">Every field, one hub</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="masters.html" class="current" aria-current="page">More</a>
+            <ul class="submenu">
+              <li class="subhead">Study</li>
+              <li><a href="profiles.html">Genre profiles</a></li>
+              <li><a href="masters.html">Masters</a></li>
+              <li><a href="history.html">History</a></li>
+              <li><a href="glossary.html">Glossary</a></li>
+              <li class="subhead">Practice</li>
+              <li><a href="business.html">Going pro</a></li>
+              <li><a href="learning.html">Learning paths</a></li>
+              <li class="subhead">Reference</li>
+              <li><a href="search.html">Search</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="searchbox" action="search.html" role="search">
+          <input type="search" name="q" placeholder="Search the library…" aria-label="Search the library">
+        </form>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="search-page">
+    <div class="page-hero">
+      <div class="container">
+        <p class="crumbs"><a href="index.html">Library</a> → Search</p>
+        <h1>Search the library</h1>
+        <p class="lede">One box, every page — genres, exposure, light, editing, history, masters, and the business of shooting. The index loads with the page and the search runs entirely in your browser; nothing is sent anywhere.</p>
+      </div>
+    </div>
+
+    <section class="section-tight">
+      <div class="container">
+        <form class="searchbox-big" role="search" id="search-form">
+          <input type="search" id="search-input" placeholder="Try “aperture”, “golden hour”, or “Rembrandt light”" aria-label="Search the library" autocomplete="off">
+          <button type="submit">Search</button>
+        </form>
+        <p class="result-count" id="result-count" role="status">Loading the index…</p>
+        <div id="results"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-seal" aria-hidden="true">写</span>
+          <strong>The Open Studio</strong>
+        </div>
+        <p>A free, community-minded reference for photographers and makers of every level — genres, craft, light, editing, history, and the business of shooting, written to be read between sessions.</p>
+      </div>
+      <div>
+        <h4>Library</h4>
+        <ul>
+          <li><a href="genres.html">Genres</a></li>
+          <li><a href="profiles.html">Genre profiles</a></li>
+          <li><a href="camera.html">Camera &amp; exposure</a></li>
+          <li><a href="composition.html">Composition</a></li>
+          <li><a href="lighting.html">Light &amp; lighting</a></li>
+          <li><a href="editing.html">Editing &amp; workflow</a></li>
+          <li><a href="gear.html">Gear &amp; optics</a></li>
+          <li><a href="terminology.html">Terminology</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+          <li><a href="masters.html">Masters</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="business.html">Going pro</a></li>
+          <li><a href="learning.html">Learning paths</a></li>
+          <li><a href="crafts.html">Every field</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="culinary.html">Cooking &amp; baking</a></li>
+          <li><a href="writing.html">Writing</a></li>
+          <li><a href="making.html">Making</a></li>
+          <li><a href="visual-arts.html">Visual arts</a></li>
+          <li><a href="performing.html">Performing</a></li>
+          <li><a href="digital.html">Digital crafts</a></li>
+          <li><a href="filmmaking.html">Film &amp; video</a></li>
+          <li><a href="gardening.html">Gardening</a></li>
+          <li><a href="fitness.html">Strength &amp; movement</a></li>
+          <li><a href="languages.html">Languages</a></li>
+          <li><a href="search.html">Search</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contributing</h4>
+        <ul>
+          <li><a href="mailto:editors@openstudio.example">Send a correction</a></li>
+          <li><a href="mailto:editors@openstudio.example">Suggest a genre or craft</a></li>
+        </ul>
+        <p class="small">Found a mistake? These pages improve the way negatives do — repetition with attention.</p>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <div class="container">
+        <span>© 2026 The Open Studio. Original reference content, written for people who make things.</span>
+        <span>Informational only — respect privacy, permits, and wildlife when you shoot.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/search-data.js"></script>
+  <script>
+  (function () {
+    "use strict";
+
+    var input = document.getElementById("search-input");
+    var form = document.getElementById("search-form");
+    var count = document.getElementById("result-count");
+    var out = document.getElementById("results");
+
+    var DATA = (typeof SEARCH_DATA !== "undefined") ? SEARCH_DATA : [];
+
+    function escapeHtml(s) {
+      return s.replace(/[&<>"']/g, function (c) {
+        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+      });
+    }
+
+    function highlight(text, terms) {
+      var safe = escapeHtml(text);
+      if (!terms.length) return safe;
+      var pattern = terms.map(function (t) {
+        return t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      }).join("|");
+      try {
+        return safe.replace(new RegExp("(" + pattern + ")", "gi"), "<mark>$1</mark>");
+      } catch (e) {
+        return safe;
+      }
+    }
+
+    function getQuery() {
+      var params = new URLSearchParams(window.location.search);
+      return (params.get("q") || "").trim();
+    }
+
+    function search(query) {
+      var terms = query.toLowerCase().split(/\s+/).filter(Boolean);
+      if (!terms.length) return [];
+      return DATA.filter(function (entry) {
+        var haystack = (entry.t + " " + entry.d + " " + entry.g).toLowerCase();
+        return terms.every(function (t) { return haystack.indexOf(t) !== -1; });
+      }).map(function (entry) {
+        var score = 0;
+        var title = entry.t.toLowerCase();
+        terms.forEach(function (t) {
+          if (title === t) score += 100;
+          else if (title.indexOf(t) === 0) score += 50;
+          else if (title.indexOf(t) !== -1) score += 25;
+          else score += 1;
+        });
+        return { entry: entry, score: score };
+      }).sort(function (a, b) { return b.score - a.score; })
+        .map(function (r) { return r.entry; });
+    }
+
+    function render(query) {
+      input.value = query;
+      if (!DATA.length) {
+        count.textContent = "The search index is empty — run the index build, or browse the library directly.";
+        out.innerHTML = "";
+        return;
+      }
+      if (!query) {
+        count.textContent = DATA.length + " entries indexed across " +
+          new Set(DATA.map(function (e) { return e.u.split("#")[0]; })).size +
+          " pages. Type above, or pick a section from the menu.";
+        out.innerHTML = "";
+        return;
+      }
+      var terms = query.toLowerCase().split(/\s+/).filter(Boolean);
+      var matches = search(query);
+      count.textContent = matches.length
+        ? matches.length + (matches.length === 1 ? " result" : " results") + " for “" + query + "”"
+        : "No results for “" + query + "” — try a shorter term, or browse the sections from the menu.";
+
+      if (!matches.length) {
+        out.innerHTML = '<p class="no-results">Nothing matched. The glossary page is the widest net: <a href="glossary.html">glossary.html</a>.</p>';
+        return;
+      }
+
+      var groups = {};
+      matches.forEach(function (e) {
+        if (!groups[e.g]) groups[e.g] = [];
+        groups[e.g].push(e);
+      });
+
+      var html = "";
+      Object.keys(groups).forEach(function (g) {
+        html += '<div class="result-group"><h2>' + escapeHtml(g) + "</h2>";
+        groups[g].forEach(function (e) {
+          html += '<a class="result" href="' + escapeHtml(e.u) + '">' +
+            '<div class="r-title">' + highlight(e.t, terms) + "</div>" +
+            '<div class="r-desc">' + highlight(e.d, terms) + "</div></a>";
+        });
+        html += "</div>";
+      });
+      out.innerHTML = html;
+    }
+
+    form.addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      var q = input.value.trim();
+      var url = q ? "search.html?q=" + encodeURIComponent(q) : "search.html";
+      window.history.replaceState(null, "", url);
+      render(q);
+    });
+
+    render(getQuery());
+  })();
+  </script>
+</body>
+</html>
